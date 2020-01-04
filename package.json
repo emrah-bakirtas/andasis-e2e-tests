@@ -1,0 +1,33 @@
+{
+  "name": "nms-e2e",
+  "version": "1.0.0",
+  "description": "e2e test for nms",
+  "license": "MIT",
+  "dependencies": {
+    "authenticator-browser-extension": "^1.1.1",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^4.2.1",
+    "grunt": "^1.0.4",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-execute": "^0.2.2",
+    "grunt-protractor-runner": "^5.0.0",
+    "grunt-protractor-webdriver": "^0.2.5",
+    "grunt-shell-spawn": "^0.3.10",
+    "n-readlines": "^1.0.0",
+    "protractor": "^5.3.2",
+    "protractor-cucumber-framework": "^5.0.0",
+    "protractor-http-client": "^1.0.4",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.7.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  },
+  "scripts": {
+    "test": "npm install grunt && grunt test",
+    "test:smoke": "npm install grunt && grunt smoke"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
