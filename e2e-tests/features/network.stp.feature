@@ -3,7 +3,7 @@ Feature: Protocols STP Feature
   #### STP Scenarios
   Scenario: Change STP settings
     Given Click Network option of navigation bar
-    When Click STP option of the Protocols
+    When Click STP option of the Network
     Then Choose STP Mode as "STP"
     Then Set Device Priority as "11"
     Then Set Maximum Age as "8"
@@ -109,7 +109,7 @@ Feature: Protocols STP Feature
 
   Scenario: Check STP Settings from .cfg file
     Given Click Network option of navigation bar
-    When Click STP option of the Protocols
+    When Click STP option of the Network
     Then Should see "stpSystemMode" value as "0"
     Then Should see "rstpBridgePriority" value as "45056"
     Then Should see "rstpBridgeMaxAge" value as "8"
@@ -166,7 +166,7 @@ Feature: Protocols STP Feature
   #### RSTP Scenarios
   Scenario: Change RSTP settings
     Given Go to the app
-    When Click STP option of the Protocols
+    When Click STP option of the Network
     Then Choose STP Mode as "RSTP"
     Then Set Device Priority as "12"
     Then Set Maximum Age as "8"
@@ -272,7 +272,7 @@ Feature: Protocols STP Feature
 
   Scenario: Check RSTP Settings from .cfg file
     Given Click Network option of navigation bar
-    When Click STP option of the Protocols
+    When Click STP option of the Network
     Then Should see "stpSystemMode" value as "1"
     Then Should see "rstpBridgePriority" value as "49152"
     Then Should see "rstpBridgeMaxAge" value as "8"
@@ -304,13 +304,13 @@ Feature: Protocols STP Feature
   #### MSTP Scenarios
   Scenario: Open VLAN
     Given Go to the app
-    When Click VLAN option of the Protocols
+    When Click VLAN option of the Network
     Then Click disabled button to enable
     Then Click Apply button
     And Click alert OK Button
 
   Scenario: Change STP settings
-    When Click STP option of the Protocols
+    When Click STP option of the Network
     Then Choose STP Mode as "MSTP"
     Then Set Maximum Age as "10"
     Then Set Package Interval as "5"
@@ -420,7 +420,7 @@ Feature: Protocols STP Feature
 
   Scenario: Check MSTP Settings from .cfg file
     Given Click Network option of navigation bar
-    When Click STP option of the Protocols
+    When Click STP option of the Network
     Then Should see "stpSystemMode" value as "2"
     Then Should see "rstpBridgeMaxAge" value as "10"
     Then Should see "rstpBridgeHelloTime" value as "5"
@@ -454,7 +454,7 @@ Feature: Protocols STP Feature
   #### Close Scenarios
   Scenario: Change STP settings
     Given Go to the app
-    When Click STP option of the Protocols
+    When Click STP option of the Network
     Then Choose STP Mode as "Close"
     Then Click STP Apply button
     Then Click confirm OK Button

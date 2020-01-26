@@ -3,7 +3,7 @@ Feature: Protocols IGMP/MLD Feature
   ### IGMP V2 Scenarios
   Scenario: Change IGMP settings
     Given Click Network option of navigation bar
-    When Click IGMP option of the Protocols
+    When Click IGMP option of the Network
     Then Choose Snooping Version as "IGMPV2"
     Then Choose Querier State as "Disabled"
     Then Set Query Interval as "120"
@@ -45,7 +45,7 @@ Feature: Protocols IGMP/MLD Feature
   ### IGMP V3 Scenarios
   Scenario: Change IGMP settings
     Given Click Network option of navigation bar
-    When Click IGMP option of the Protocols
+    When Click IGMP option of the Network
     Then Choose Snooping Version as "IGMPV3"
     Then Choose Querier State as "Enabled"
     Then Set Query Interval as "110"
@@ -84,7 +84,7 @@ Feature: Protocols IGMP/MLD Feature
   ### Disabled Scenarios
   Scenario: Change IGMP settings
     Given Click Network option of navigation bar
-    When Click IGMP option of the Protocols
+    When Click IGMP option of the Network
     Then Choose Snooping Version as "Disabled"
     Then Click IGMP Apply button
     And Click alert OK Button

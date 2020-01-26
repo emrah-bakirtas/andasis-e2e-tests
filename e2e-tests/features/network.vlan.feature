@@ -2,7 +2,7 @@ Feature: Protocols VLAN Feature
 
   Scenario: Open Update 802.1q Table
     Given Click Network option of navigation bar
-    When Click VLAN option of the Protocols
+    When Click VLAN option of the Network
     Then Click disabled button to enable
     Then Click update button
 
@@ -183,7 +183,7 @@ Feature: Protocols VLAN Feature
 
   Scenario: Disable VLAN
     Given Click Network option of navigation bar
-    When Click VLAN option of the Protocols
+    When Click VLAN option of the Network
     Then Click enabled button to disable
     Then Click confirm OK Button
     Then Should not see VLAN 802.1q area
