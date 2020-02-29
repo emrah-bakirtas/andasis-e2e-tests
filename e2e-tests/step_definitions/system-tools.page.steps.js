@@ -8,7 +8,7 @@ const navbarSystemToolsDown = $('#systemToolsi.fa-angle-down');
 const menuRestore = element(by.xpath('//*[@id="systemTools"]/li[9]/a'));
 
 Given(/^Click System Tools option of navigation bar$/, () =>
-    browser.wait(EC.invisibilityOf(submitModal), WAIT_TIME, `${submitModal} taking too long to disappear in the DOM`)
+    it(EC.invisibilityOf(submitModal), WAIT_TIME, `${submitModal} taking too long to disappear in the DOM`)
         .then(() => navbarSystemToolsDown.isPresent())
         .then(status => status ? navbarSystemTools.click() : null)
 );

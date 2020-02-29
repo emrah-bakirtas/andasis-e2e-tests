@@ -19,7 +19,7 @@ Not only Angular. Protractor gives extra advantages to test Angular apps but you
 [Protractor Multiple Cucumber HTML Reporter Plugin](https://github.com/wswebcreation/protractor-multiple-cucumber-html-reporter-plugin) will connect Protractor, CucumberJS and protractor-cucumber-framework to generate unique JSON files per feature with only a few lines of code.
 
 Building and Running the Project
-=============================
+================================
 
 ## Prerequisites
 There are a few things needed before you can work with Protractor. Make sure you have the latest versions of the following installed

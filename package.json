@@ -1,7 +1,7 @@
 {
-  "name": "nms-e2e",
+  "name": "andasis-e2e",
   "version": "1.0.0",
-  "description": "e2e test for nms",
+  "description": "e2e test for andasis",
   "license": "MIT",
   "dependencies": {
     "authenticator-browser-extension": "^1.1.1",
